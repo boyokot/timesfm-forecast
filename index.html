@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimesFM 2.5 — Real-Time Financial Forecasts</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0d1117; color: #c9d1d9; padding: 20px; }
+        .container { max-width: 1000px; margin: 0 auto; }
+        .hero { text-align: center; padding: 40px 20px; border-bottom: 1px solid #30363d; margin-bottom: 30px; }
+        .hero h1 { font-size: 2.2em; color: #58a6ff; }
+        .hero p { color: #8b949e; font-size: 1.1em; margin-top: 8px; }
+        .badge { display: inline-block; background: #1f6feb22; color: #58a6ff; border: 1px solid #1f6feb44; border-radius: 20px; padding: 4px 14px; font-size: 0.85em; margin: 4px; }
+        .last-updated { color: #8b949e; font-size: 0.85em; }
+        .card { background: #161b22; border: 1px solid #30363d; border-radius: 12px; margin-bottom: 24px; overflow: hidden; }
+        .card-header { padding: 20px 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+        .card-header h2 { font-size: 1.3em; color: #f0f6fc; }
+        .ticker { color: #8b949e; font-size: 0.85em; }
+        .price { font-size: 1.4em; font-weight: bold; color: #f0f6fc; }
+        .chart-wrap { padding: 10px 24px; height: 350px; }
+        .fc-table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+        .fc-table th { background: #21262d; padding: 10px 16px; text-align: left; font-size: 0.85em; color: #8b949e; }
+        .fc-table td { padding: 10px 16px; border-bottom: 1px solid #21262d; font-size: 0.95em; }
+        .fc-table tr:hover { background: #1c2128; }
+        .card-footer { padding: 14px 24px; background: #0d1117; color: #8b949e; font-size: 0.8em; border-top: 1px solid #30363d; }
+        .card-footer a { color: #58a6ff; }
+        .disclaimer { text-align: center; padding: 20px; color: #8b949e; font-size: 0.8em; }
+        .loading { text-align: center; padding: 40px; color: #8b949e; }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 1.5em; }
+            .price { font-size: 1.1em; }
+            .chart-wrap { height: 250px; padding: 10px 8px; }
+            .fc-table td, .fc-table th { padding: 6px 8px; font-size: 0.8em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>🔮 TimesFM 2.5 Forecasts</h1>
+            <p>Real-time financial predictions using Google Research's Time Series Foundation Model</p>
+            <div class="badges">
+                <span class="badge">🤖 TimesFM 2.5</span>
+                <span class="badge">200M params</span>
+                <span class="badge">PyTorch CPU</span>
+                <span class="badge">Model: 800MB cached</span>
+            </div>
+            <div class="last-updated">Last updated: 2026-06-22 16:21:39 WIB</div>
+        </div>
+        
+    <div class="card">
+        <div class="card-header" style="background:#F7931A20; border-left:4px solid #F7931A;">
+            <h2>📈 Bitcoin (BTC/USD) <span class="ticker">(BTC-USD)</span></h2>
+            <div class="price">$64,074.22 <small>USD</small></div>
+        </div>
+        <div class="chart-wrap">
+            <canvas id="chart-btc" width="100%" height="300"></canvas>
+        </div>
+        <table class="fc-table">
+            <thead>
+                <tr><th>Horizon</th><th>Forecast</th><th>80% Confidence</th><th>Change</th></tr>
+            </thead>
+            <tbody>
+        <tr>
+            <td><strong>t+1</strong></td>
+            <td style="color:#F44336;font-weight:bold;font-size:1.1em;">63,806.39 <small>USD</small></td>
+            <td>61,878.38 — 65,919.49 <small>USD</small></td>
+            <td style="color:#F44336;">-0.4%</td>
+        </tr>
+        <tr>
+            <td><strong>t+7</strong></td>
+            <td style="color:#4CAF50;font-weight:bold;font-size:1.1em;">64,362.77 <small>USD</small></td>
+            <td>59,219.79 — 69,946.89 <small>USD</small></td>
+            <td style="color:#4CAF50;">+0.5%</td>
+        </tr>
+        <tr>
+            <td><strong>t+15</strong></td>
+            <td style="color:#4CAF50;font-weight:bold;font-size:1.1em;">65,127.17 <small>USD</small></td>
+            <td>56,979.18 — 74,524.21 <small>USD</small></td>
+            <td style="color:#4CAF50;">+1.6%</td>
+        </tr>
+        <tr>
+            <td><strong>t+30</strong></td>
+            <td style="color:#4CAF50;font-weight:bold;font-size:1.1em;">66,295.16 <small>USD</small></td>
+            <td>53,549.91 — 80,869.92 <small>USD</small></td>
+            <td style="color:#4CAF50;">+3.5%</td>
+        </tr></tbody>
+        </table>
+        <div class="card-footer">
+            ⚡ Forecast: 1.3s | 
+            📊 Context: 731 days | 
+            🔮 Horizon: 30 days | 
+            🤖 Model: TimesFM 2.5 (200M)
+            <br><small>Trained by Google Research. Paper: <a href="https://arxiv.org/abs/2310.10688" target="_blank">arXiv:2310.10688</a></small>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" style="background:#E5393520; border-left:4px solid #E53935;">
+            <h2>📈 WTI Crude Oil Futures <span class="ticker">(CL=F)</span></h2>
+            <div class="price">$75.34 <small>USD/bbl</small></div>
+        </div>
+        <div class="chart-wrap">
+            <canvas id="chart-oil" width="100%" height="300"></canvas>
+        </div>
+        <table class="fc-table">
+            <thead>
+                <tr><th>Horizon</th><th>Forecast</th><th>80% Confidence</th><th>Change</th></tr>
+            </thead>
+            <tbody>
+        <tr>
+            <td><strong>t+1</strong></td>
+            <td style="color:#F44336;font-weight:bold;font-size:1.1em;">75.26 <small>USD/bbl</small></td>
+            <td>72.95 — 79.31 <small>USD/bbl</small></td>
+            <td style="color:#F44336;">-0.1%</td>
+        </tr>
+        <tr>
+            <td><strong>t+7</strong></td>
+            <td style="color:#F44336;font-weight:bold;font-size:1.1em;">74.99 <small>USD/bbl</small></td>
+            <td>68.62 — 85.54 <small>USD/bbl</small></td>
+            <td style="color:#F44336;">-0.5%</td>
+        </tr>
+        <tr>
+            <td><strong>t+15</strong></td>
+            <td style="color:#F44336;font-weight:bold;font-size:1.1em;">75.07 <small>USD/bbl</small></td>
+            <td>65.60 — 90.32 <small>USD/bbl</small></td>
+            <td style="color:#F44336;">-0.4%</td>
+        </tr>
+        <tr>
+            <td><strong>t+30</strong></td>
+            <td style="color:#4CAF50;font-weight:bold;font-size:1.1em;">76.56 <small>USD/bbl</small></td>
+            <td>63.28 — 97.91 <small>USD/bbl</small></td>
+            <td style="color:#4CAF50;">+1.6%</td>
+        </tr></tbody>
+        </table>
+        <div class="card-footer">
+            ⚡ Forecast: 0.5s | 
+            📊 Context: 502 days | 
+            🔮 Horizon: 30 days | 
+            🤖 Model: TimesFM 2.5 (200M)
+            <br><small>Trained by Google Research. Paper: <a href="https://arxiv.org/abs/2310.10688" target="_blank">arXiv:2310.10688</a></small>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" style="background:#FFD70020; border-left:4px solid #FFD700;">
+            <h2>📉 Gold Futures <span class="ticker">(GC=F)</span></h2>
+            <div class="price">$4,225.00 <small>USD/oz</small></div>
+        </div>
+        <div class="chart-wrap">
+            <canvas id="chart-gold" width="100%" height="300"></canvas>
+        </div>
+        <table class="fc-table">
+            <thead>
+                <tr><th>Horizon</th><th>Forecast</th><th>80% Confidence</th><th>Change</th></tr>
+            </thead>
+            <tbody>
+        <tr>
+            <td><strong>t+1</strong></td>
+            <td style="color:#4CAF50;font-weight:bold;font-size:1.1em;">4,228.57 <small>USD/oz</small></td>
+            <td>4,103.82 — 4,333.17 <small>USD/oz</small></td>
+            <td style="color:#4CAF50;">+0.1%</td>
+        </tr>
+        <tr>
+            <td><strong>t+7</strong></td>
+            <td style="color:#F44336;font-weight:bold;font-size:1.1em;">4,199.76 <small>USD/oz</small></td>
+            <td>3,964.02 — 4,423.99 <small>USD/oz</small></td>
+            <td style="color:#F44336;">-0.6%</td>
+        </tr>
+        <tr>
+            <td><strong>t+15</strong></td>
+            <td style="color:#F44336;font-weight:bold;font-size:1.1em;">4,146.90 <small>USD/oz</small></td>
+            <td>3,831.79 — 4,469.67 <small>USD/oz</small></td>
+            <td style="color:#F44336;">-1.8%</td>
+        </tr>
+        <tr>
+            <td><strong>t+30</strong></td>
+            <td style="color:#F44336;font-weight:bold;font-size:1.1em;">4,101.72 <small>USD/oz</small></td>
+            <td>3,656.58 — 4,559.23 <small>USD/oz</small></td>
+            <td style="color:#F44336;">-2.9%</td>
+        </tr></tbody>
+        </table>
+        <div class="card-footer">
+            ⚡ Forecast: 0.6s | 
+            📊 Context: 502 days | 
+            🔮 Horizon: 30 days | 
+            🤖 Model: TimesFM 2.5 (200M)
+            <br><small>Trained by Google Research. Paper: <a href="https://arxiv.org/abs/2310.10688" target="_blank">arXiv:2310.10688</a></small>
+        </div>
+    </div>
+        <div class="disclaimer">
+            ⚠️ <strong>Disclaimer</strong>: Forecasts are generated by an AI model and are for informational purposes only.<br>
+            Not financial advice. Past performance does not guarantee future results. Data source: Yahoo Finance.
+        </div>
+    </div>
+    <script>
+    (function() {
+        const ctx_btc = document.getElementById('chart-btc').getContext('2d');
+        new Chart(ctx_btc, {
+            type: 'line',
+            data: {
+                labels: Array.from({length: 80 + 30}, (_, i) => i - 80),
+                datasets: [{
+                    label: 'Historical',
+                    data: [67290.515625, 68981.8984375, 68859.828125, 71940.703125, 71123.359375, 71767.828125, 72979.046875, 73054.2734375, 70753.40625, 74484.640625, 74181.609375, 74805.078125, 75152.1328125, 77126.875, 75726.2109375, 73856.3515625, 75872.5234375, 76352.7734375, 78203.1015625, 78268.953125, 77455.3125, 77612.015625, 78657.5390625, 77366.625, 76350.671875, 75776.1328125, 76304.3203125, 78179.0, 78657.25, 78538.2265625, 79827.90625, 80927.0546875, 81427.53125, 80009.9921875, 80186.765625, 80664.3671875, 82138.9296875, 81728.296875, 80477.4921875, 79277.1171875, 81051.25, 79065.6796875, 78131.4375, 77429.3515625, 76954.171875, 76750.90625, 77457.7734375, 77539.171875, 75488.2421875, 76673.3671875, 76981.125, 77279.9296875, 75825.734375, 74344.703125, 73536.5546875, 73372.5234375, 73754.8359375, 73579.6875, 71319.7734375, 66703.65625, 64014.3671875, 63801.57421875, 60922.66796875, 60867.4140625, 63239.51953125, 63090.58984375, 61643.78125, 61449.2890625, 63561.0546875, 63543.19921875, 64421.32421875, 65710.3984375, 66289.5, 65600.640625, 64418.4453125, 62896.47265625, 63540.8359375, 64239.67578125, 63237.5390625, 64074.21875, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null],
+                    borderColor: '#F7931A',
+                    backgroundColor: '#F7931A20',
+                    borderWidth: 2,
+                    pointRadius: 0,
+                    fill: false,
+                }, {
+                    label: 'Forecast',
+                    data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 64074.21875, 63806.390625, 63878.25390625, 64017.640625, 63955.68359375, 64269.5078125, 64286.93359375, 64362.76953125, 64472.6015625, 64506.15234375, 64639.6015625, 64801.859375, 64868.671875, 64999.6171875, 65209.89453125, 65127.171875, 65240.9765625, 65312.859375, 65398.1328125, 65613.59375, 65488.8671875, 65534.5078125, 65655.7890625, 65754.203125, 65756.703125, 65841.3515625, 66007.296875, 66076.6484375, 66079.9375, 66078.7265625, 66295.15625],
+                    borderColor: '#F7931A',
+                    backgroundColor: '#F7931A40',
+                    borderWidth: 3,
+                    borderDash: [8, 4],
+                    pointRadius: 0,
+                    fill: false,
+                }, {
+                    label: '80% CI',
+                    data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 61878.3828125, 61374.0, 61001.80859375, 60363.9453125, 60284.51171875, 59784.8203125, 59219.7890625, 58826.9375, 58625.8046875, 58188.12890625, 58076.390625, 57597.890625, 57364.45703125, 57212.41796875, 56979.1796875, 56695.42578125, 56277.79296875, 56176.1328125, 55507.171875, 55421.52734375, 55095.60546875, 55079.8359375, 55065.68359375, 54734.96484375, 54407.890625, 53982.7109375, 54346.3046875, 53676.11328125, 53377.33984375, 53549.91015625, 80869.921875, 80186.7578125, 79733.3984375, 79888.265625, 79333.796875, 78630.328125, 77891.2734375, 77965.2890625, 77621.5625, 77202.71875, 77035.78125, 76679.59375, 75435.109375, 75297.5078125, 74851.0625, 74524.2109375, 73930.1796875, 73193.015625, 72934.0234375, 72460.8203125, 71693.4609375, 71111.9453125, 70349.7265625, 69946.890625, 69331.921875, 68664.046875, 67591.3125, 67239.171875, 66324.96875, 65919.4921875],
+                    backgroundColor: '#F7931A15',
+                    borderColor: 'transparent',
+                    pointRadius: 0,
+                    fill: true,
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'top', labels: { usePointStyle: true, padding: 20 } },
+                    tooltip: { mode: 'index', intersect: false }
+                },
+                scales: {
+                    x: { title: { display: true, text: 'Days (0 = today)' } },
+                    y: { title: { display: true, text: 'Price (USD)' } }
+                }
+            }
+        });
+    })();
+    
+    (function() {
+        const ctx_oil = document.getElementById('chart-oil').getContext('2d');
+        new Chart(ctx_oil, {
+            type: 'line',
+            data: {
+                labels: Array.from({length: 80 + 30}, (_, i) => i - 80),
+                datasets: [{
+                    label: 'Historical',
+                    data: [65.20999908447266, 67.0199966430664, 71.2300033569336, 74.55999755859375, 74.66000366210938, 81.01000213623047, 90.9000015258789, 94.7699966430664, 83.44999694824219, 87.25, 95.7300033569336, 98.70999908447266, 93.5, 96.20999908447266, 96.31999969482422, 96.13999938964844, 98.31999969482422, 88.12999725341797, 92.3499984741211, 90.31999969482422, 94.4800033569336, 99.63999938964844, 102.87999725341797, 101.37999725341797, 100.12000274658203, 111.54000091552734, 112.41000366210938, 112.94999694824219, 94.41000366210938, 97.87000274658203, 96.56999969482422, 99.08000183105469, 91.27999877929688, 91.29000091552734, 94.69000244140625, 83.8499984741211, 89.61000061035156, 92.12999725341797, 92.95999908447266, 95.8499984741211, 94.4000015258789, 96.37000274658203, 99.93000030517578, 106.87999725341797, 105.06999969482422, 101.94000244140625, 106.41999816894531, 102.2699966430664, 95.08000183105469, 94.80999755859375, 95.41999816894531, 98.06999969482422, 102.18000030517578, 101.0199966430664, 101.16999816894531, 105.41999816894531, 108.66000366210938, 107.7699966430664, 98.26000213623047, 96.3499984741211, 96.5999984741211, 93.88999938964844, 88.68000030517578, 88.9000015258789, 87.36000061035156, 92.16000366210938, 93.76000213623047, 96.0199966430664, 93.04000091552734, 90.54000091552734, 91.30000305175781, 88.19999694824219, 90.02999877929688, 87.70999908447266, 84.87999725341797, 80.75, 76.05000305175781, 76.79000091552734, 76.5999984741211, 75.33999633789062, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null],
+                    borderColor: '#E53935',
+                    backgroundColor: '#E5393520',
+                    borderWidth: 2,
+                    pointRadius: 0,
+                    fill: false,
+                }, {
+                    label: 'Forecast',
+                    data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 75.33999633789062, 75.26455688476562, 75.1177978515625, 75.41978454589844, 75.24530029296875, 75.24525451660156, 75.03132629394531, 74.99462127685547, 74.8133544921875, 75.01252746582031, 74.84800720214844, 74.9423828125, 74.9774169921875, 75.00433349609375, 74.8629150390625, 75.06973266601562, 75.10639190673828, 75.20167541503906, 75.36654663085938, 75.38462829589844, 75.20716857910156, 75.60742950439453, 75.49358367919922, 75.66497802734375, 75.90532684326172, 76.04100036621094, 76.12344360351562, 76.59039306640625, 76.5489730834961, 76.68557739257812, 76.55525970458984],
+                    borderColor: '#E53935',
+                    backgroundColor: '#E5393540',
+                    borderWidth: 3,
+                    borderDash: [8, 4],
+                    pointRadius: 0,
+                    fill: false,
+                }, {
+                    label: '80% CI',
+                    data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 72.94924926757812, 72.00857543945312, 71.52708435058594, 71.0177001953125, 70.10059356689453, 69.2754898071289, 68.61542510986328, 67.60897064208984, 67.158935546875, 66.66959381103516, 66.29785919189453, 66.22315216064453, 66.51716613769531, 65.61262512207031, 65.59525299072266, 65.44917297363281, 65.3509521484375, 65.3467025756836, 64.3438949584961, 64.12516784667969, 64.13249206542969, 63.790321350097656, 64.03143310546875, 64.30892944335938, 64.27840423583984, 63.50843811035156, 64.16499328613281, 63.497161865234375, 63.43067169189453, 63.275909423828125, 97.91155242919922, 98.1455307006836, 97.24049377441406, 96.56021118164062, 96.58108520507812, 95.05241394042969, 94.36649322509766, 93.72616577148438, 93.4127426147461, 93.38456726074219, 92.85398864746094, 92.47997283935547, 91.59959411621094, 91.27334594726562, 90.70301818847656, 90.31912231445312, 89.55989074707031, 89.0100326538086, 89.03026580810547, 88.17980194091797, 87.64729309082031, 86.92800903320312, 86.20838928222656, 85.53990936279297, 84.67467498779297, 83.87037658691406, 83.08917236328125, 82.19638061523438, 80.49337768554688, 79.30751037597656],
+                    backgroundColor: '#E5393515',
+                    borderColor: 'transparent',
+                    pointRadius: 0,
+                    fill: true,
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'top', labels: { usePointStyle: true, padding: 20 } },
+                    tooltip: { mode: 'index', intersect: false }
+                },
+                scales: {
+                    x: { title: { display: true, text: 'Days (0 = today)' } },
+                    y: { title: { display: true, text: 'Price (USD/bbl)' } }
+                }
+            }
+        });
+    })();
+    
+    (function() {
+        const ctx_gold = document.getElementById('chart-gold').getContext('2d');
+        new Chart(ctx_gold, {
+            type: 'line',
+            data: {
+                labels: Array.from({length: 80 + 30}, (_, i) => i - 80),
+                datasets: [{
+                    label: 'Historical',
+                    data: [5176.5, 5230.5, 5294.39990234375, 5107.39990234375, 5120.2001953125, 5065.2998046875, 5146.10009765625, 5091.5, 5229.7001953125, 5167.39990234375, 5115.7998046875, 5052.5, 4994.0, 5001.0, 4889.89990234375, 4600.7001953125, 4570.39990234375, 4404.10009765625, 4399.2998046875, 4549.7998046875, 4375.5, 4492.0, 4526.0, 4647.60009765625, 4783.2001953125, 4651.5, 4656.7998046875, 4657.10009765625, 4749.5, 4792.2001953125, 4761.89990234375, 4742.39990234375, 4825.0, 4800.0, 4785.39990234375, 4857.60009765625, 4806.60009765625, 4698.39990234375, 4732.5, 4705.10009765625, 4722.2998046875, 4675.39990234375, 4591.5, 4545.2001953125, 4614.7001953125, 4629.89990234375, 4519.5, 4555.7998046875, 4681.89990234375, 4699.7998046875, 4720.39990234375, 4718.7001953125, 4677.60009765625, 4697.7001953125, 4678.10009765625, 4555.7998046875, 4552.5, 4506.2998046875, 4531.2998046875, 4539.7998046875, 4521.0, 4500.39990234375, 4447.5, 4499.2998046875, 4560.5, 4475.2001953125, 4489.10009765625, 4436.7001953125, 4475.7998046875, 4337.10009765625, 4335.89990234375, 4260.0, 4108.2001953125, 4090.300048828125, 4215.0, 4328.0, 4330.89990234375, 4358.89990234375, 4224.10009765625, 4225.0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null],
+                    borderColor: '#FFD700',
+                    backgroundColor: '#FFD70020',
+                    borderWidth: 2,
+                    pointRadius: 0,
+                    fill: false,
+                }, {
+                    label: 'Forecast',
+                    data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 4225.0, 4228.56640625, 4221.8837890625, 4219.58203125, 4224.8603515625, 4212.033203125, 4199.70703125, 4199.763671875, 4182.0009765625, 4175.5390625, 4163.064453125, 4157.5244140625, 4155.6875, 4155.0830078125, 4143.966796875, 4146.904296875, 4138.1455078125, 4132.69921875, 4131.90234375, 4143.1572265625, 4144.62890625, 4133.7373046875, 4139.318359375, 4140.8720703125, 4141.8447265625, 4124.123046875, 4126.544921875, 4122.3349609375, 4116.2060546875, 4103.99267578125, 4101.7236328125],
+                    borderColor: '#FFD700',
+                    backgroundColor: '#FFD70040',
+                    borderWidth: 3,
+                    borderDash: [8, 4],
+                    pointRadius: 0,
+                    fill: false,
+                }, {
+                    label: '80% CI',
+                    data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 4103.8232421875, 4063.306640625, 4038.27001953125, 4040.867431640625, 3998.869140625, 3972.89697265625, 3964.017333984375, 3926.112060546875, 3908.6845703125, 3885.559814453125, 3873.64013671875, 3859.142333984375, 3854.277099609375, 3827.82275390625, 3831.790283203125, 3831.34912109375, 3800.549560546875, 3795.996337890625, 3774.402587890625, 3784.40478515625, 3757.1474609375, 3764.583251953125, 3764.028564453125, 3752.135986328125, 3731.68798828125, 3701.153076171875, 3715.0361328125, 3695.17236328125, 3670.855712890625, 3656.5771484375, 4559.234375, 4558.5185546875, 4563.9560546875, 4565.25390625, 4559.28173828125, 4546.91015625, 4536.4833984375, 4531.5380859375, 4516.615234375, 4505.2080078125, 4517.6533203125, 4509.056640625, 4475.39599609375, 4477.189453125, 4475.8818359375, 4469.673828125, 4452.4853515625, 4449.13037109375, 4449.5234375, 4431.3642578125, 4421.5302734375, 4423.75244140625, 4427.32568359375, 4423.9853515625, 4415.14453125, 4403.13671875, 4397.44384765625, 4375.169921875, 4350.9677734375, 4333.17431640625],
+                    backgroundColor: '#FFD70015',
+                    borderColor: 'transparent',
+                    pointRadius: 0,
+                    fill: true,
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'top', labels: { usePointStyle: true, padding: 20 } },
+                    tooltip: { mode: 'index', intersect: false }
+                },
+                scales: {
+                    x: { title: { display: true, text: 'Days (0 = today)' } },
+                    y: { title: { display: true, text: 'Price (USD/oz)' } }
+                }
+            }
+        });
+    })();
+    </script>
+</body>
+</html>
