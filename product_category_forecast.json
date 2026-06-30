@@ -1,74 +1,74 @@
 {
-  "generated": "2026-06-30 06:01:11 WIB",
+  "generated": "2026-07-01 06:02:24 WIB",
   "model": "TimesFM 2.5 (200M)",
   "data_source": "Yahoo Finance (sector ETFs + commodities as category proxies)",
   "rankings": [
     {
       "rank": 1,
-      "category": "Cotton",
-      "change_30d": "3.8",
-      "current": 76.66,
-      "forecast": 79.56,
+      "category": "Beauty",
+      "change_30d": "2.6",
+      "current": 450.98,
+      "forecast": 462.83,
       "direction": "UP",
-      "volatility": 1.3,
+      "volatility": 0.6,
       "potential": "👍 MEDIUM"
     },
     {
       "rank": 2,
       "category": "Auto Parts",
-      "change_30d": "3.0",
-      "current": 3153.62,
-      "forecast": 3249.55,
-      "direction": "UP",
-      "volatility": 0.9,
-      "potential": "👍 MEDIUM"
-    },
-    {
-      "rank": 3,
-      "category": "Toys/Games",
-      "change_30d": "2.3",
-      "current": 13.69,
-      "forecast": 14.01,
+      "change_30d": "2.5",
+      "current": 3195.94,
+      "forecast": 3276.49,
       "direction": "UP",
       "volatility": 0.7,
       "potential": "👍 MEDIUM"
     },
     {
-      "rank": 4,
-      "category": "Beauty",
-      "change_30d": "1.8",
-      "current": 459.12,
-      "forecast": 467.16,
+      "rank": 3,
+      "category": "Home Improvement",
+      "change_30d": "1.4",
+      "current": 352.68,
+      "forecast": 357.74,
       "direction": "UP",
-      "volatility": 0.5,
+      "volatility": 0.3,
+      "potential": "👍 MEDIUM"
+    },
+    {
+      "rank": 4,
+      "category": "Toys/Games",
+      "change_30d": "1.3",
+      "current": 13.88,
+      "forecast": 14.05,
+      "direction": "UP",
+      "volatility": 0.6,
       "potential": "👍 MEDIUM"
     },
     {
       "rank": 5,
-      "category": "Home Improvement",
+      "category": "Cotton",
       "change_30d": "0.9",
-      "current": 350.81,
-      "forecast": 353.99,
+      "current": 76.62,
+      "forecast": 77.3,
       "direction": "UP",
-      "volatility": 0.2,
+      "volatility": 0.6,
       "potential": "👍 MEDIUM"
     },
     {
       "rank": 6,
-      "category": "Coffee",
-      "change_30d": "-0.0",
-      "current": 277.95,
-      "forecast": 277.95,
+      "category": "Pet Care",
+      "change_30d": "-0.2",
+      "current": 2.72,
+      "forecast": 2.72,
       "direction": "DOWN",
-      "volatility": 0.4,
+      "volatility": 1.5,
       "potential": "👎 LOW"
     },
     {
       "rank": 7,
       "category": "Sugar",
-      "change_30d": "-0.0",
+      "change_30d": "-0.2",
       "current": 14.8,
-      "forecast": 14.8,
+      "forecast": 14.78,
       "direction": "DOWN",
       "volatility": 0.4,
       "potential": "👎 LOW"
@@ -76,59 +76,59 @@
     {
       "rank": 8,
       "category": "Consumer Disc",
-      "change_30d": "-0.1",
-      "current": 117.12,
-      "forecast": 117.04,
+      "change_30d": "-0.5",
+      "current": 117.28,
+      "forecast": 116.72,
       "direction": "DOWN",
-      "volatility": 0.1,
+      "volatility": 0.2,
       "potential": "👎 LOW"
     },
     {
       "rank": 9,
-      "category": "Pet Care",
+      "category": "Coffee",
       "change_30d": "-0.6",
-      "current": 2.75,
-      "forecast": 2.73,
+      "current": 302.15,
+      "forecast": 300.4,
       "direction": "DOWN",
-      "volatility": 1.3,
+      "volatility": 0.4,
       "potential": "👎 LOW"
     },
     {
       "rank": 10,
       "category": "Consumer Staples",
       "change_30d": "-0.8",
-      "current": 84.37,
-      "forecast": 83.73,
+      "current": 83.07,
+      "forecast": 82.44,
       "direction": "DOWN",
-      "volatility": 0.3,
+      "volatility": 0.2,
       "potential": "👎 LOW"
     },
     {
       "rank": 11,
+      "category": "Sporting Goods",
+      "change_30d": "-2.1",
+      "current": 226.81,
+      "forecast": 221.94,
+      "direction": "DOWN",
+      "volatility": 0.8,
+      "potential": "👎 LOW"
+    },
+    {
+      "rank": 12,
       "category": "E-commerce",
-      "change_30d": "-2.8",
-      "current": 110.8,
-      "forecast": 107.68,
+      "change_30d": "-2.7",
+      "current": 111.75,
+      "forecast": 108.74,
       "direction": "DOWN",
       "volatility": 0.5,
       "potential": "👎 LOW"
     },
     {
-      "rank": 12,
-      "category": "Sporting Goods",
-      "change_30d": "-3.6",
-      "current": 232.34,
-      "forecast": 224.06,
-      "direction": "DOWN",
-      "volatility": 1.0,
-      "potential": "👎 LOW"
-    },
-    {
       "rank": 13,
       "category": "Retail",
-      "change_30d": "-3.7",
-      "current": 87.94,
-      "forecast": 84.72,
+      "change_30d": "-3.6",
+      "current": 87.74,
+      "forecast": 84.58,
       "direction": "DOWN",
       "volatility": 1.1,
       "potential": "👎 LOW"
@@ -136,19 +136,19 @@
     {
       "rank": 14,
       "category": "Electronics",
-      "change_30d": "-4.4",
-      "current": 77.64,
-      "forecast": 74.22,
+      "change_30d": "-3.8",
+      "current": 75.88,
+      "forecast": 73.01,
       "direction": "DOWN",
-      "volatility": 1.1,
+      "volatility": 1.0,
       "potential": "👎 LOW"
     },
     {
       "rank": 15,
       "category": "Home/DIY",
-      "change_30d": "-6.3",
-      "current": 115.39,
-      "forecast": 108.14,
+      "change_30d": "-6.5",
+      "current": 115.56,
+      "forecast": 108.0,
       "direction": "DOWN",
       "volatility": 2.2,
       "potential": "👎 LOW"
@@ -156,124 +156,124 @@
   ],
   "raw_forecasts": {
     "Home/DIY": {
-      "current": 115.39,
-      "forecast_30d": 108.14,
-      "change_pct": "-6.3",
+      "current": 115.56,
+      "forecast_30d": 108.0,
+      "change_pct": "-6.5",
       "change_direction": "DOWN",
       "volatility": 2.2,
-      "forecast_time_s": 0.4
+      "forecast_time_s": 1.7
     },
     "Retail": {
-      "current": 87.94,
-      "forecast_30d": 84.72,
-      "change_pct": "-3.7",
+      "current": 87.74,
+      "forecast_30d": 84.58,
+      "change_pct": "-3.6",
       "change_direction": "DOWN",
       "volatility": 1.1,
       "forecast_time_s": 0.3
     },
     "Consumer Disc": {
-      "current": 117.12,
-      "forecast_30d": 117.04,
-      "change_pct": "-0.1",
+      "current": 117.28,
+      "forecast_30d": 116.72,
+      "change_pct": "-0.5",
       "change_direction": "DOWN",
-      "volatility": 0.1,
+      "volatility": 0.2,
       "forecast_time_s": 0.4
     },
     "Consumer Staples": {
-      "current": 84.37,
-      "forecast_30d": 83.73,
+      "current": 83.07,
+      "forecast_30d": 82.44,
       "change_pct": "-0.8",
       "change_direction": "DOWN",
-      "volatility": 0.3,
-      "forecast_time_s": 0.3
+      "volatility": 0.2,
+      "forecast_time_s": 0.4
     },
     "Pet Care": {
-      "current": 2.75,
-      "forecast_30d": 2.73,
-      "change_pct": "-0.6",
+      "current": 2.72,
+      "forecast_30d": 2.72,
+      "change_pct": "-0.2",
       "change_direction": "DOWN",
-      "volatility": 1.3,
+      "volatility": 1.5,
       "forecast_time_s": 0.4
     },
     "E-commerce": {
-      "current": 110.8,
-      "forecast_30d": 107.68,
-      "change_pct": "-2.8",
+      "current": 111.75,
+      "forecast_30d": 108.74,
+      "change_pct": "-2.7",
       "change_direction": "DOWN",
       "volatility": 0.5,
       "forecast_time_s": 0.3
     },
     "Sporting Goods": {
-      "current": 232.34,
-      "forecast_30d": 224.06,
-      "change_pct": "-3.6",
+      "current": 226.81,
+      "forecast_30d": 221.94,
+      "change_pct": "-2.1",
+      "change_direction": "DOWN",
+      "volatility": 0.8,
+      "forecast_time_s": 0.3
+    },
+    "Home Improvement": {
+      "current": 352.68,
+      "forecast_30d": 357.74,
+      "change_pct": "1.4",
+      "change_direction": "UP",
+      "volatility": 0.3,
+      "forecast_time_s": 0.4
+    },
+    "Beauty": {
+      "current": 450.98,
+      "forecast_30d": 462.83,
+      "change_pct": "2.6",
+      "change_direction": "UP",
+      "volatility": 0.6,
+      "forecast_time_s": 0.3
+    },
+    "Electronics": {
+      "current": 75.88,
+      "forecast_30d": 73.01,
+      "change_pct": "-3.8",
       "change_direction": "DOWN",
       "volatility": 1.0,
       "forecast_time_s": 0.3
     },
-    "Home Improvement": {
-      "current": 350.81,
-      "forecast_30d": 353.99,
-      "change_pct": "0.9",
-      "change_direction": "UP",
-      "volatility": 0.2,
-      "forecast_time_s": 0.4
-    },
-    "Beauty": {
-      "current": 459.12,
-      "forecast_30d": 467.16,
-      "change_pct": "1.8",
-      "change_direction": "UP",
-      "volatility": 0.5,
-      "forecast_time_s": 0.3
-    },
-    "Electronics": {
-      "current": 77.64,
-      "forecast_30d": 74.22,
-      "change_pct": "-4.4",
-      "change_direction": "DOWN",
-      "volatility": 1.1,
-      "forecast_time_s": 0.3
-    },
     "Auto Parts": {
-      "current": 3153.62,
-      "forecast_30d": 3249.55,
-      "change_pct": "3.0",
-      "change_direction": "UP",
-      "volatility": 0.9,
-      "forecast_time_s": 0.3
-    },
-    "Toys/Games": {
-      "current": 13.69,
-      "forecast_30d": 14.01,
-      "change_pct": "2.3",
+      "current": 3195.94,
+      "forecast_30d": 3276.49,
+      "change_pct": "2.5",
       "change_direction": "UP",
       "volatility": 0.7,
       "forecast_time_s": 0.3
     },
-    "Cotton": {
-      "current": 76.66,
-      "forecast_30d": 79.56,
-      "change_pct": "3.8",
+    "Toys/Games": {
+      "current": 13.88,
+      "forecast_30d": 14.05,
+      "change_pct": "1.3",
       "change_direction": "UP",
-      "volatility": 1.3,
+      "volatility": 0.6,
+      "forecast_time_s": 0.3
+    },
+    "Cotton": {
+      "current": 76.62,
+      "forecast_30d": 77.3,
+      "change_pct": "0.9",
+      "change_direction": "UP",
+      "volatility": 0.6,
       "forecast_time_s": 0.3
     },
     "Coffee": {
-      "current": 277.95,
-      "forecast_30d": 277.95,
-      "change_pct": "-0.0",
-      "change_direction": "DOWN",
-      "volatility": 0.4,
-      "forecast_time_s": 0.4
-    },
-    "Sugar": {
-      "current": 14.8,
-      "forecast_30d": 14.8,
-      "change_pct": "-0.0",
+      "current": 302.15,
+      "forecast_30d": 300.4,
+      "change_pct": "-0.6",
       "change_direction": "DOWN",
       "volatility": 0.4,
       "forecast_time_s": 0.3
+    },
+    "Sugar": {
+      "current": 14.8,
+      "forecast_30d": 14.78,
+      "change_pct": "-0.2",
+      "change_direction": "DOWN",
+      "volatility": 0.4,
+      "forecast_time_s": 0.4
     }
   }
 }
