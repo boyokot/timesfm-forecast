@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-03 06:03:06 WIB",
+  "generated": "2026-07-04 06:01:25 WIB",
   "model": "TimesFM 2.5 (200M)",
   "data_source": "Yahoo Finance (sector ETFs + commodities as category proxies)",
   "rankings": [
@@ -16,11 +16,11 @@
     {
       "rank": 2,
       "category": "Cotton",
-      "change_30d": "1.9",
-      "current": 77.52,
-      "forecast": 78.96,
+      "change_30d": "3.1",
+      "current": 72.57,
+      "forecast": 74.82,
       "direction": "UP",
-      "volatility": 0.8,
+      "volatility": 1.1,
       "potential": "👍 MEDIUM"
     },
     {
@@ -87,20 +87,20 @@
       "rank": 9,
       "category": "Coffee",
       "change_30d": "-0.9",
-      "current": 302.15,
-      "forecast": 299.51,
+      "current": 315.65,
+      "forecast": 312.96,
       "direction": "DOWN",
-      "volatility": 0.4,
+      "volatility": 0.6,
       "potential": "👎 LOW"
     },
     {
       "rank": 10,
       "category": "Sugar",
-      "change_30d": "-1.0",
-      "current": 14.81,
+      "change_30d": "-1.2",
+      "current": 14.85,
       "forecast": 14.67,
       "direction": "DOWN",
-      "volatility": 0.6,
+      "volatility": 0.7,
       "potential": "👎 LOW"
     },
     {
@@ -161,7 +161,7 @@
       "change_pct": "-4.9",
       "change_direction": "DOWN",
       "volatility": 1.5,
-      "forecast_time_s": 1.5
+      "forecast_time_s": 0.4
     },
     "Retail": {
       "current": 88.06,
@@ -169,7 +169,7 @@
       "change_pct": "-3.2",
       "change_direction": "DOWN",
       "volatility": 0.9,
-      "forecast_time_s": 1.3
+      "forecast_time_s": 0.4
     },
     "Consumer Disc": {
       "current": 117.12,
@@ -177,7 +177,7 @@
       "change_pct": "-0.0",
       "change_direction": "DOWN",
       "volatility": 0.1,
-      "forecast_time_s": 1.3
+      "forecast_time_s": 0.4
     },
     "Consumer Staples": {
       "current": 84.99,
@@ -185,7 +185,7 @@
       "change_pct": "-0.7",
       "change_direction": "DOWN",
       "volatility": 0.2,
-      "forecast_time_s": 1.3
+      "forecast_time_s": 0.8
     },
     "Pet Care": {
       "current": 2.62,
@@ -193,7 +193,7 @@
       "change_pct": "7.5",
       "change_direction": "UP",
       "volatility": 3.3,
-      "forecast_time_s": 1.4
+      "forecast_time_s": 0.4
     },
     "E-commerce": {
       "current": 114.84,
@@ -201,7 +201,7 @@
       "change_pct": "-3.0",
       "change_direction": "DOWN",
       "volatility": 0.5,
-      "forecast_time_s": 1.4
+      "forecast_time_s": 0.4
     },
     "Sporting Goods": {
       "current": 236.18,
@@ -209,7 +209,7 @@
       "change_pct": "-4.8",
       "change_direction": "DOWN",
       "volatility": 1.0,
-      "forecast_time_s": 1.4
+      "forecast_time_s": 0.4
     },
     "Home Improvement": {
       "current": 357.9,
@@ -217,7 +217,7 @@
       "change_pct": "0.4",
       "change_direction": "UP",
       "volatility": 0.2,
-      "forecast_time_s": 1.4
+      "forecast_time_s": 0.4
     },
     "Beauty": {
       "current": 461.33,
@@ -225,7 +225,7 @@
       "change_pct": "0.7",
       "change_direction": "UP",
       "volatility": 0.2,
-      "forecast_time_s": 1.3
+      "forecast_time_s": 0.4
     },
     "Electronics": {
       "current": 77.99,
@@ -233,7 +233,7 @@
       "change_pct": "-4.0",
       "change_direction": "DOWN",
       "volatility": 1.1,
-      "forecast_time_s": 1.4
+      "forecast_time_s": 0.4
     },
     "Auto Parts": {
       "current": 3159.28,
@@ -241,7 +241,7 @@
       "change_pct": "1.5",
       "change_direction": "UP",
       "volatility": 0.4,
-      "forecast_time_s": 1.2
+      "forecast_time_s": 0.4
     },
     "Toys/Games": {
       "current": 13.34,
@@ -249,31 +249,31 @@
       "change_pct": "1.4",
       "change_direction": "UP",
       "volatility": 0.3,
-      "forecast_time_s": 1.3
+      "forecast_time_s": 0.3
     },
     "Cotton": {
-      "current": 77.52,
-      "forecast_30d": 78.96,
-      "change_pct": "1.9",
+      "current": 72.57,
+      "forecast_30d": 74.82,
+      "change_pct": "3.1",
       "change_direction": "UP",
-      "volatility": 0.8,
-      "forecast_time_s": 1.5
+      "volatility": 1.1,
+      "forecast_time_s": 0.4
     },
     "Coffee": {
-      "current": 302.15,
-      "forecast_30d": 299.51,
+      "current": 315.65,
+      "forecast_30d": 312.96,
       "change_pct": "-0.9",
       "change_direction": "DOWN",
-      "volatility": 0.4,
-      "forecast_time_s": 1.4
+      "volatility": 0.6,
+      "forecast_time_s": 0.4
     },
     "Sugar": {
-      "current": 14.81,
+      "current": 14.85,
       "forecast_30d": 14.67,
-      "change_pct": "-1.0",
+      "change_pct": "-1.2",
       "change_direction": "DOWN",
-      "volatility": 0.6,
-      "forecast_time_s": 1.3
+      "volatility": 0.7,
+      "forecast_time_s": 0.4
     }
   }
 }
