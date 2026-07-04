@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-04 06:01:25 WIB",
+  "generated": "2026-07-05 06:02:04 WIB",
   "model": "TimesFM 2.5 (200M)",
   "data_source": "Yahoo Finance (sector ETFs + commodities as category proxies)",
   "rankings": [
@@ -161,7 +161,7 @@
       "change_pct": "-4.9",
       "change_direction": "DOWN",
       "volatility": 1.5,
-      "forecast_time_s": 0.4
+      "forecast_time_s": 1.0
     },
     "Retail": {
       "current": 88.06,
@@ -185,7 +185,7 @@
       "change_pct": "-0.7",
       "change_direction": "DOWN",
       "volatility": 0.2,
-      "forecast_time_s": 0.8
+      "forecast_time_s": 0.4
     },
     "Pet Care": {
       "current": 2.62,
@@ -209,7 +209,7 @@
       "change_pct": "-4.8",
       "change_direction": "DOWN",
       "volatility": 1.0,
-      "forecast_time_s": 0.4
+      "forecast_time_s": 0.3
     },
     "Home Improvement": {
       "current": 357.9,
@@ -217,7 +217,7 @@
       "change_pct": "0.4",
       "change_direction": "UP",
       "volatility": 0.2,
-      "forecast_time_s": 0.4
+      "forecast_time_s": 0.3
     },
     "Beauty": {
       "current": 461.33,
@@ -249,7 +249,7 @@
       "change_pct": "1.4",
       "change_direction": "UP",
       "volatility": 0.3,
-      "forecast_time_s": 0.3
+      "forecast_time_s": 0.4
     },
     "Cotton": {
       "current": 72.57,

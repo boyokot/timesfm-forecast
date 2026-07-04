@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-04 06:01:44 WIB",
+  "generated": "2026-07-05 06:02:23 WIB",
   "model": "TimesFM 2.5 (200M)",
   "note": "Specific company stocks as product type proxies",
   "products": [
@@ -30,10 +30,10 @@
     {
       "rank": 4,
       "product": "Sepatu Sneaker",
-      "change_30d": 7.6,
+      "change_30d": 7.4,
       "direction": "UP",
       "current": 44.09,
-      "forecast": 47.45
+      "forecast": 47.34
     },
     {
       "rank": 5,
@@ -137,7 +137,7 @@
       "change_30d": -2.0,
       "direction": "DOWN",
       "current": 80.15,
-      "forecast": 78.57
+      "forecast": 78.53
     },
     {
       "rank": 18,
