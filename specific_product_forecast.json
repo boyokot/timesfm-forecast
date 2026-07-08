@@ -1,175 +1,175 @@
 {
-  "generated": "2026-07-07 06:01:42 WIB",
+  "generated": "2026-07-09 06:03:58 WIB",
   "model": "TimesFM 2.5 (200M)",
   "note": "Specific company stocks as product type proxies",
   "products": [
     {
       "rank": 1,
-      "product": "Snack & Cemilan",
-      "change_30d": 12.3,
+      "product": "Kosmetik Mass",
+      "change_30d": 11.7,
       "direction": "UP",
-      "current": 12.96,
-      "forecast": 14.56
+      "current": 74.15,
+      "forecast": 82.82
     },
     {
       "rank": 2,
-      "product": "Ban & Velg",
-      "change_30d": 11.9,
+      "product": "Perlengkapan Olahraga",
+      "change_30d": 9.5,
       "direction": "UP",
-      "current": 6.93,
-      "forecast": 7.75
+      "current": 44.46,
+      "forecast": 48.69
     },
     {
       "rank": 3,
-      "product": "Kosmetik Mass",
-      "change_30d": 10.6,
+      "product": "Ban & Velg",
+      "change_30d": 8.1,
       "direction": "UP",
-      "current": 73.49,
-      "forecast": 81.25
+      "current": 6.5,
+      "forecast": 7.03
     },
     {
       "rank": 4,
-      "product": "Aksesoris Hewan",
-      "change_30d": 8.6,
+      "product": "Snack & Cemilan",
+      "change_30d": 6.8,
       "direction": "UP",
-      "current": 21.29,
-      "forecast": 23.12
+      "current": 12.84,
+      "forecast": 13.72
     },
     {
       "rank": 5,
-      "product": "Perlengkapan Olahraga",
-      "change_30d": 7.4,
+      "product": "Minuman Sehat",
+      "change_30d": 5.8,
       "direction": "UP",
-      "current": 46.88,
-      "forecast": 50.37
+      "current": 30.6,
+      "forecast": 32.39
     },
     {
       "rank": 6,
-      "product": "Sepatu Sneaker",
-      "change_30d": 6.8,
+      "product": "Aksesoris Hewan",
+      "change_30d": 4.4,
       "direction": "UP",
-      "current": 43.34,
-      "forecast": 46.3
+      "current": 20.56,
+      "forecast": 21.46
     },
     {
       "rank": 7,
-      "product": "Bahan Makanan Organik",
-      "change_30d": 3.7,
+      "product": "Skincare Premium",
+      "change_30d": 4.3,
       "direction": "UP",
-      "current": 0.57,
-      "forecast": 0.59
+      "current": 81.8,
+      "forecast": 85.33
     },
     {
       "rank": 8,
-      "product": "Minuman Sehat",
-      "change_30d": 3.3,
+      "product": "Makanan Hewan Premium",
+      "change_30d": 3.4,
       "direction": "UP",
-      "current": 33.04,
-      "forecast": 34.13
+      "current": 54.25,
+      "forecast": 56.1
     },
     {
       "rank": 9,
-      "product": "Makanan Hewan Premium",
-      "change_30d": 2.0,
+      "product": "Bahan Makanan Organik",
+      "change_30d": 2.8,
       "direction": "UP",
-      "current": 54.09,
-      "forecast": 55.18
+      "current": 0.56,
+      "forecast": 0.58
     },
     {
       "rank": 10,
-      "product": "Skincare Premium",
-      "change_30d": 1.6,
+      "product": "Sepatu Sneaker",
+      "change_30d": 2.0,
       "direction": "UP",
-      "current": 84.9,
-      "forecast": 86.22
+      "current": 42.89,
+      "forecast": 43.73
     },
     {
       "rank": 11,
       "product": "Mainan Koleksi",
-      "change_30d": 1.2,
+      "change_30d": 0.7,
       "direction": "UP",
-      "current": 13.05,
-      "forecast": 13.2
+      "current": 13.17,
+      "forecast": 13.26
     },
     {
       "rank": 12,
-      "product": "Audio/Earphone",
-      "change_30d": 0.7,
+      "product": "Sepatu Outdoor",
+      "change_30d": 0.4,
       "direction": "UP",
-      "current": 21.16,
-      "forecast": 21.31
+      "current": 102.22,
+      "forecast": 102.61
     },
     {
       "rank": 13,
-      "product": "Sepatu Outdoor",
-      "change_30d": -1.2,
-      "direction": "DOWN",
-      "current": 105.67,
-      "forecast": 104.36
+      "product": "Dekorasi Rumah",
+      "change_30d": 0.2,
+      "direction": "UP",
+      "current": 37.67,
+      "forecast": 37.75
     },
     {
       "rank": 14,
-      "product": "Dekorasi Rumah",
-      "change_30d": -1.5,
+      "product": "Peralatan Dapur",
+      "change_30d": -0.0,
       "direction": "DOWN",
-      "current": 38.04,
-      "forecast": 37.48
+      "current": 5.06,
+      "forecast": 5.06
     },
     {
       "rank": 15,
-      "product": "Board Game/Puzzle",
-      "change_30d": -1.6,
+      "product": "Audio/Earphone",
+      "change_30d": -0.1,
       "direction": "DOWN",
-      "current": 77.98,
-      "forecast": 76.75
+      "current": 21.15,
+      "forecast": 21.12
     },
     {
       "rank": 16,
       "product": "Aksesoris HP",
-      "change_30d": -1.7,
+      "change_30d": -1.5,
       "direction": "DOWN",
-      "current": 312.66,
-      "forecast": 307.22
+      "current": 313.39,
+      "forecast": 308.56
     },
     {
       "rank": 17,
-      "product": "Kopi & Aksesoris Seduh",
-      "change_30d": -1.9,
+      "product": "Activewear",
+      "change_30d": -1.8,
       "direction": "DOWN",
-      "current": 102.11,
-      "forecast": 100.21
+      "current": 113.62,
+      "forecast": 111.56
     },
     {
       "rank": 18,
-      "product": "Activewear",
-      "change_30d": -2.1,
+      "product": "Board Game/Puzzle",
+      "change_30d": -2.3,
       "direction": "DOWN",
-      "current": 115.64,
-      "forecast": 113.18
+      "current": 75.86,
+      "forecast": 74.1
     },
     {
       "rank": 19,
-      "product": "Alat Outdoor/Camping",
-      "change_30d": -2.8,
+      "product": "Kopi & Aksesoris Seduh",
+      "change_30d": -2.4,
       "direction": "DOWN",
-      "current": 48.42,
-      "forecast": 47.08
+      "current": 103.87,
+      "forecast": 101.37
     },
     {
       "rank": 20,
-      "product": "Aksesoris Motor/Mobil",
-      "change_30d": -4.5,
+      "product": "Alat Outdoor/Camping",
+      "change_30d": -3.0,
       "direction": "DOWN",
-      "current": 128.66,
-      "forecast": 122.93
+      "current": 47.74,
+      "forecast": 46.32
     },
     {
       "rank": 21,
-      "product": "Peralatan Dapur",
-      "change_30d": -6.6,
+      "product": "Aksesoris Motor/Mobil",
+      "change_30d": -6.8,
       "direction": "DOWN",
-      "current": 5.57,
-      "forecast": 5.2
+      "current": 124.73,
+      "forecast": 116.26
     }
   ]
 }
