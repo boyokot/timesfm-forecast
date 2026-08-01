@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-01 06:01:27 WIB",
+  "generated": "2026-08-02 06:01:49 WIB",
   "model": "TimesFM 2.5 (200M)",
   "data_source": "Yahoo Finance (sector ETFs + commodities as category proxies)",
   "rankings": [
@@ -36,31 +36,31 @@
     {
       "rank": 4,
       "category": "Coffee",
-      "change_30d": "1.7",
-      "current": 313.55,
-      "forecast": 318.73,
+      "change_30d": "2.0",
+      "current": 332.1,
+      "forecast": 338.87,
       "direction": "UP",
-      "volatility": 0.6,
+      "volatility": 0.7,
       "potential": "👍 MEDIUM"
     },
     {
       "rank": 5,
-      "category": "Sugar",
-      "change_30d": "1.2",
-      "current": 14.65,
-      "forecast": 14.82,
-      "direction": "UP",
-      "volatility": 0.4,
-      "potential": "👍 MEDIUM"
-    },
-    {
-      "rank": 6,
       "category": "Consumer Disc",
       "change_30d": "1.1",
       "current": 116.09,
       "forecast": 117.4,
       "direction": "UP",
       "volatility": 0.2,
+      "potential": "👍 MEDIUM"
+    },
+    {
+      "rank": 6,
+      "category": "Sugar",
+      "change_30d": "1.1",
+      "current": 14.66,
+      "forecast": 14.82,
+      "direction": "UP",
+      "volatility": 0.3,
       "potential": "👍 MEDIUM"
     },
     {
@@ -116,11 +116,11 @@
     {
       "rank": 12,
       "category": "Cotton",
-      "change_30d": "-2.8",
-      "current": 81.2,
-      "forecast": 78.9,
+      "change_30d": "-2.5",
+      "current": 80.5,
+      "forecast": 78.45,
       "direction": "DOWN",
-      "volatility": 0.9,
+      "volatility": 0.8,
       "potential": "👎 LOW"
     },
     {
@@ -169,7 +169,7 @@
       "change_pct": "-3.5",
       "change_direction": "DOWN",
       "volatility": 0.9,
-      "forecast_time_s": 0.4
+      "forecast_time_s": 0.3
     },
     "Consumer Disc": {
       "current": 116.09,
@@ -185,7 +185,7 @@
       "change_pct": "-0.7",
       "change_direction": "DOWN",
       "volatility": 0.2,
-      "forecast_time_s": 0.3
+      "forecast_time_s": 0.4
     },
     "Pet Care": {
       "current": 2.79,
@@ -193,7 +193,7 @@
       "change_pct": "-4.3",
       "change_direction": "DOWN",
       "volatility": 1.3,
-      "forecast_time_s": 0.4
+      "forecast_time_s": 0.3
     },
     "E-commerce": {
       "current": 114.01,
@@ -209,7 +209,7 @@
       "change_pct": "6.3",
       "change_direction": "UP",
       "volatility": 1.4,
-      "forecast_time_s": 0.3
+      "forecast_time_s": 0.4
     },
     "Home Improvement": {
       "current": 331.96,
@@ -217,7 +217,7 @@
       "change_pct": "0.4",
       "change_direction": "UP",
       "volatility": 0.3,
-      "forecast_time_s": 0.4
+      "forecast_time_s": 0.3
     },
     "Beauty": {
       "current": 512.83,
@@ -225,7 +225,7 @@
       "change_pct": "-5.3",
       "change_direction": "DOWN",
       "volatility": 1.5,
-      "forecast_time_s": 0.3
+      "forecast_time_s": 0.4
     },
     "Electronics": {
       "current": 86.26,
@@ -241,7 +241,7 @@
       "change_pct": "13.6",
       "change_direction": "UP",
       "volatility": 3.4,
-      "forecast_time_s": 0.4
+      "forecast_time_s": 0.3
     },
     "Toys/Games": {
       "current": 15.09,
@@ -252,27 +252,27 @@
       "forecast_time_s": 0.3
     },
     "Cotton": {
-      "current": 81.2,
-      "forecast_30d": 78.9,
-      "change_pct": "-2.8",
+      "current": 80.5,
+      "forecast_30d": 78.45,
+      "change_pct": "-2.5",
       "change_direction": "DOWN",
-      "volatility": 0.9,
-      "forecast_time_s": 0.4
-    },
-    "Coffee": {
-      "current": 313.55,
-      "forecast_30d": 318.73,
-      "change_pct": "1.7",
-      "change_direction": "UP",
-      "volatility": 0.6,
+      "volatility": 0.8,
       "forecast_time_s": 0.3
     },
-    "Sugar": {
-      "current": 14.65,
-      "forecast_30d": 14.82,
-      "change_pct": "1.2",
+    "Coffee": {
+      "current": 332.1,
+      "forecast_30d": 338.87,
+      "change_pct": "2.0",
       "change_direction": "UP",
-      "volatility": 0.4,
+      "volatility": 0.7,
+      "forecast_time_s": 0.4
+    },
+    "Sugar": {
+      "current": 14.66,
+      "forecast_30d": 14.82,
+      "change_pct": "1.1",
+      "change_direction": "UP",
+      "volatility": 0.3,
       "forecast_time_s": 0.3
     }
   }
